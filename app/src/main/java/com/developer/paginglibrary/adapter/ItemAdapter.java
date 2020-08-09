@@ -22,7 +22,7 @@ import java.util.Objects;
 public class ItemAdapter extends PagedListAdapter<ItemModel, ItemAdapter.ItemViewHolder> {
     private Context context;
 
-    protected ItemAdapter(Context context) {
+    public ItemAdapter(Context context) {
         super(DIFF_CALLBACK);
         this.context = context;
     }

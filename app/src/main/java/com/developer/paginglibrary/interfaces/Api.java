@@ -11,6 +11,6 @@ public interface Api
     @GET("answers")
     Call<StackApiResponse> getAnswers(
             @Query("page") int page,
-            @Query("pagesize")int pageSize,
-            @Query("site")String site);
+            @Query("pagesize") int pageSize,
+            @Query("site") String site, @Query("order") String order, @Query("sort") String sort);
 }

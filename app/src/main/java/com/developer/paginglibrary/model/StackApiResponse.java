@@ -8,6 +8,16 @@ import java.util.List;
 public class StackApiResponse implements Serializable
 {
     List<ItemModel> items;
+    @SerializedName("has_more")
+    Boolean hasMore;
+
+    public Boolean getHasMore() {
+        return hasMore;
+    }
+
+    public void setHasMore(Boolean hasMore) {
+        this.hasMore = hasMore;
+    }
 
     public List<ItemModel> getItems() {
         return items;
